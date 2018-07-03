@@ -1,0 +1,39 @@
+@import 'scss/main';
+@import 'medium';
+@import 'large';
+
+.Error {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__message {
+        color: #ccc;
+    }
+
+    &__button {
+        padding: 0.4em;
+        overflow: hidden;
+        border-width: 0;
+        text-decoration: none;
+        outline: none;
+        border-radius: 2px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+        
+        background-color: #9E9E9E;
+        color: #ecf0f1;
+        
+        transition: background-color .3s;
+        margin-left: 1em;
+    }
+}
+
+@include medium {
+    @import 'medium';
+}
+
+@include large {
+	@import 'large';
+}
